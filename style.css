@@ -111,7 +111,7 @@ header {
     /* Aligns it to the left */
     right: 0;
     /* Ensures it spans the full width */
-    background-color: transparent;
+    background-color: var(--blue);
     /* Optional: Adds a semi-transparent background */
     z-index: 1000;
     /* Ensures it appears above other content */
@@ -284,7 +284,7 @@ nav {
     /* Ensure text is white */
     padding: 0px;
     margin-left: 20px;
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
 .hero-container {
@@ -355,4 +355,106 @@ p {
 
 .hero-text button:hover {
     background-color: var(--blue);
+}
+
+
+
+.hero-assets {
+    position: absolute;
+    /* Position them absolutely within the hero */
+    top: 0;
+    /* Adjust as needed */
+    left: 0;
+    /* Align to the left */
+    width: 100%;
+    /* Full width */
+    height: auto;
+    /* Adjust height as needed */
+    z-index: -1;
+    /* Ensure they stay behind the text */
+}
+
+.hero-assets img {
+    position: absolute;
+    /* Position each asset absolutely */
+    height: auto;
+    /* Maintain aspect ratio */
+
+}
+
+/* Positioning each asset specifically */
+.clouds {
+    top: 10%;
+    /* Adjust vertical position */
+    left: 10%;
+    /* Adjust horizontal position */
+    width: 20%;
+    /* Adjust size */
+}
+
+.dotted-lines {
+    top: 20%;
+    /* Adjust as needed */
+    left: 30%;
+    /* Adjust as needed */
+    width: 25%;
+    /* Adjust size */
+}
+
+.dotted-ropes {
+    top: 40%;
+    /* Adjust as needed */
+    left: 50%;
+    /* Adjust as needed */
+    width: 15%;
+    /* Adjust size */
+}
+
+.flying-balloons {
+    bottom: 10%;
+    /* Position near the bottom */
+    right: 10%;
+    /* Align to the right */
+    width: 20%;
+    /* Adjust size */
+}
+
+/*Footer*/
+
+.bottom-image {
+    position: fixed;
+    /* Make the image fixed */
+    bottom: 0;
+    /* Align to the bottom */
+    left: 0;
+    /* Align to the left */
+    width: 100%;
+    /* Full width */
+    z-index: 0;
+    /* Behind the footer */
+}
+
+.bottom-image img {
+    width: 100%;
+    /* Make the image cover the full width */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin-bottom: -5px;
+    padding-bottom: 0;
+
+}
+
+footer {
+    position: relative;
+    /* Allow positioning of child elements */
+    text-align: center;
+    /* Center the text */
+    padding: 20px;
+    /* Add some padding for better spacing */
+    color: var(--blue);
+    /* Text color */
+    background-color: transparent;
+    /* Footer background color */
+    z-index: 1;
+    /* Ensure footer appears above the bottom image */
 }
