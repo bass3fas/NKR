@@ -1,0 +1,263 @@
+/* Define Root Variables */
+:root {
+    /* Color Variables */
+    --white: #FFFFFF;
+    --blue: #343C61;
+    --pink: #C05871;
+
+    /* Font Weight Variables */
+    --light: 300;
+    --medium: 400;
+    --regular: 500;
+    --bold: 700;
+    --black: 900;
+
+    --font-family-primary: 'Roboto Slab', serif;
+
+
+}
+
+h1 {
+    font-family: var(--font-family-primary);
+    font-weight: var(--light);
+    /* 98pt Light */
+    font-size: 60pt;
+}
+
+h1 b {
+    font-weight: var(--black);
+    /* 98pt Black */
+}
+
+h2 {
+    font-family: var(--font-family-primary);
+    font-weight: var(--black);
+    /* 54pt Black */
+    font-size: 27pt;
+}
+
+h2 b {
+    font-weight: var(--black);
+    /* 54pt Black */
+}
+
+h3 {
+    font-family: var(--font-family-primary);
+    font-weight: var(--light);
+    /* 41pt Light */
+    font-size: 20pt;
+}
+
+h3 b {
+    font-weight: var(--regular);
+    /* 41pt Regular */
+}
+
+h4 {
+    font-family: var(--font-family-primary);
+    font-weight: var(--medium);
+    /* 30pt Medium */
+    font-size: 15pt;
+}
+
+h5 {
+    font-family: var(--font-family-primary);
+    font-weight: var(--light);
+    /* 27pt Light */
+    font-size: 13pt;
+}
+
+h5 b {
+    font-weight: var(--regular);
+    /* 27pt Black */
+}
+
+p {
+    font-family: var(--font-family-primary);
+    font-weight: var(--light);
+    /* 18pt Regular */
+    font-size: 9pt;
+}
+
+
+body {
+    background-image: url('assets/images/background.png');
+    background-size: 1920px 1080px;
+    /* Set specific dimensions */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-attachment: fixed;
+    /* Keep the background fixed during scrolling */
+    background-position: center;
+    /* Center the background image */
+    margin: 0;
+    /* Remove default margin */
+    padding: 0;
+    /* Remove default padding */
+    color: var(--white);
+    /* Set all text to white */
+}
+
+/*********************************************************************************************************************/
+
+/*Header*/
+
+header {
+    position: fixed;
+    /* Fixes the header position */
+    top: 0;
+    /* Positions it at the top */
+    left: 0;
+    /* Aligns it to the left */
+    right: 0;
+    /* Ensures it spans the full width */
+    background-color: transparent;
+    /* Optional: Adds a semi-transparent background */
+    z-index: 1000;
+    /* Ensures it appears above other content */
+}
+
+/*Logo and it's text*/
+
+.logo {
+    display: flex;
+    align-items: center;
+    /* Aligns items vertically in the center */
+}
+
+.logo img {
+    margin-right: -10px;
+    margin-top: 10px;
+    scale: 70%;
+    /* Adjust the space between the logo and text */
+}
+
+.logo-text {
+    display: flex;
+    margin-left: -10px;
+    flex-direction: column;
+    /* Stack the text vertically */
+    justify-content: center;
+    /* Center the text vertically relative to the logo */
+}
+
+.logo-text h5 {
+    margin: 0;
+    /* Remove default margin to minimize space between lines */
+    line-height: 1;
+    /* Adjust line height for minimal space */
+}
+
+
+/*Navigation Bar*/
+
+
+
+nav {
+    display: flex;
+    /* Use flexbox for horizontal alignment */
+    align-items: center;
+    /* Vertically center items */
+    justify-content: space-between;
+    /* Space between logo and links */
+    padding: 10px;
+    padding-top: 0px;
+    /* Add some padding for aesthetics */
+    margin-top: -10px;
+}
+
+.nav-links {
+    display: flex;
+    /* Aligns all links in a row */
+    align-items: center;
+    /* Vertically centers the links */
+    margin-left: auto;
+    /* Pushes the links to the right */
+}
+
+.nav-links li {
+    list-style: none;
+    /* Removes default bullet points */
+    margin: 0 15px;
+    /* Space between links */
+}
+
+.nav-links a {
+    color: var(--white);
+    /* Default text color */
+    text-decoration: none;
+    /* Removes underline */
+    font-weight: var(--medium);
+    /* Adjust font weight as needed */
+    transition: color 0.3s;
+    /* Smooth transition for hover effect */
+}
+
+.nav-links a:hover {
+    color: var(--pink);
+    /* Changes text color on hover */
+}
+
+.logo-text,
+.nav-links {
+    height: 100%;
+    /* Ensures both sections are the same height for alignment */
+    display: flex;
+    /* Ensures items are centered vertically */
+    align-items: center;
+    /* Vertically centers all content */
+}
+
+.search-bar {
+    position: relative;
+    /* Allows absolute positioning of the icon */
+    display: flex;
+    /* Aligns items in a row */
+}
+
+.search-bar input {
+    padding: 8px 20px 8px 8px;
+    /* Adjust padding for space on the left for the icon */
+    border: 1px solid var(--white);
+    /* Sets a border color */
+    border-radius: 15px;
+    /* Rounded corners for the input */
+    background-color: var(--white);
+    /* Makes background transparent */
+    color: var(--blue);
+    /* Text color */
+    outline: none;
+    /* Removes outline on focus */
+
+}
+
+.search-bar img {
+    position: absolute;
+    /* Positions the icon */
+    right: 10px;
+    /* Space from the left */
+    top: 50%;
+    /* Center vertically */
+    transform: translateY(-50%);
+    /* Adjusts for perfect vertical alignment */
+    width: 20px;
+    /* Adjust the width of the icon as needed */
+    height: auto;
+    /* Maintains aspect ratio */
+}
+
+.search-bar::before {
+    content: url('assets/images/search-icon.png');
+    /* Use the icon as a background */
+    position: absolute;
+    /* Positions the icon */
+    right: 10px;
+    /* Space from the left */
+    top: 40%;
+    /* Center vertically */
+    transform: translateY(-50%);
+    /* Adjusts for perfect vertical alignment */
+    pointer-events: none;
+    /* Allows clicking through the icon */
+    scale: 70%;
+}
