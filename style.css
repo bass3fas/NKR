@@ -21,7 +21,7 @@ h1 {
     font-family: var(--font-family-primary);
     font-weight: var(--light);
     /* 98pt Light */
-    font-size: 60pt;
+    font-size: 48pt;
 }
 
 h1 b {
@@ -260,4 +260,92 @@ nav {
     pointer-events: none;
     /* Allows clicking through the icon */
     scale: 70%;
+}
+
+
+/*Hero Section*/
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    /* Full screen height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Slight background color overlay for better contrast */
+    color: var(--white);
+    /* Ensure text is white */
+    padding: 0px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.hero-container {
+    display: flex;
+    width: 100%;
+    max-width: 900px;
+    /* Limit the max width for aesthetics */
+    box-sizing: border-box;
+}
+
+.hero-text {
+    flex: 1;
+    /* Takes up 50% of the space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+}
+
+.hero-line {
+    padding-top: 10px;
+    margin-right: 50px;
+
+}
+
+.hero-images {
+    flex: 1;
+    /* Takes up 50% of the space */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    /* Placeholder background */
+}
+
+/* Style the text */
+.hero-text h1,
+p {
+    margin: 0;
+}
+
+
+
+.hero-text button {
+    margin-top: 30px;
+    background-color: var(--white);
+    color: var(--blue);
+    font-size: 12pt;
+    font-family: var(--font-family-primary);
+    transition: background-color 0.3s;
+    padding: 5px 11px;
+    /* Padding for a better look */
+    border: none;
+    /* Remove default border */
+    border-radius: 25px;
+    /* Rounded edges */
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+    text-align: center;
+    margin-right: 320px;
+    /* Align text to the left */
+    display: inline-block;
+    /* Allow alignment and size adjustments */
+}
+
+.hero-text button:hover {
+    background-color: var(--blue);
 }
