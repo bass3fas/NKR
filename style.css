@@ -285,7 +285,7 @@ nav {
     /* Ensure text is white */
     padding: 0px;
     margin-left: 20px;
-    margin-top: 0px;
+    margin-top: -30px;
 }
 
 .hero-container {
@@ -358,12 +358,63 @@ p {
     /* Align text to the left */
     display: inline-block;
     /* Allow alignment and size adjustments */
-    margin-top: 10px;
+    margin-top: 40px;
 }
 
 .hero-text button:hover {
     background-color: var(--blue);
 }
+
+
+.hero-images {
+    position: relative;
+    /* Ensures images are placed within the hero section */
+    width: 50%;
+    /* Adjust the width as needed */
+    height: auto;
+    display: flex;
+    justify-content: center;
+    /* Centers the images horizontally */
+    align-items: center;
+    /* Centers the images vertically */
+}
+
+.image-stack {
+    position: relative;
+    /* Container for stacked images */
+    width: 100%;
+    /* Adjust as needed */
+    height: auto;
+    /* Ensure the height scales automatically */
+    margin-top: 50px;
+    margin-left: 20px;
+
+}
+
+.objects-over-photo {
+    position: absolute;
+    /* Stack this image behind the photo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 0;
+    /* Set this to be behind the photo */
+    scale: 69%;
+    margin-top: -80px;
+    padding-top: 0;
+}
+
+.photo-header {
+    position: relative;
+    /* The photo remains on top */
+    width: 100%;
+    /* Adjust as needed */
+    height: auto;
+    z-index: 1;
+    /* Set this on top of the object image */
+}
+
 
 
 .hero-assets {
@@ -391,16 +442,11 @@ p {
 
 .clouds {
     scale: 105%;
-    margin-top: 80px;
+    margin-top: 100px;
     margin-left: 30px;
 }
 
-.dotted-lines {
 
-    margin-top: 100px;
-
-    margin-left: -50px;
-}
 
 .dotted-ropes {
     scale: 110%;
@@ -409,14 +455,7 @@ p {
 
 }
 
-.flying-balloons {
-    bottom: 10%;
-    /* Position near the bottom */
-    right: 10%;
-    /* Align to the right */
-    width: 20%;
-    /* Adjust size */
-}
+
 
 /*Footer*/
 
