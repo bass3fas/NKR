@@ -7,7 +7,7 @@ All fonts are from the Google Fonts library and should be included in the HTML h
 
 ```html
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-
+```
 | Weight  | Val |
 |---------|-----|
 | Light   | 300 |
