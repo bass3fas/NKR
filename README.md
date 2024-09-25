@@ -47,7 +47,7 @@ All fonts are from the Google Fonts library and should be included in the HTML h
 | h3 b    | 41pt  | Regular| 
 | h4      | 30pt  | Medium | 
 | h5      | 27pt  | Light  | 
-| h5 b    | 27pt  | Regular  | 
+| h5 b    | 27pt  | Regular| 
 | p       | 18pt  | Regular| 
 
 
