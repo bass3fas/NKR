@@ -21,7 +21,7 @@ h1 {
     font-family: var(--font-family-primary);
     font-weight: var(--light);
     /* 98pt Light */
-    font-size: 48pt;
+    font-size: 45pt;
 }
 
 h1 b {
@@ -33,7 +33,7 @@ h2 {
     font-family: var(--font-family-primary);
     font-weight: var(--black);
     /* 54pt Black */
-    font-size: 27pt;
+    font-size: 25pt;
 }
 
 h2 b {
@@ -45,7 +45,7 @@ h3 {
     font-family: var(--font-family-primary);
     font-weight: var(--light);
     /* 41pt Light */
-    font-size: 20pt;
+    font-size: 18pt;
 }
 
 h3 b {
@@ -57,7 +57,7 @@ h4 {
     font-family: var(--font-family-primary);
     font-weight: var(--medium);
     /* 30pt Medium */
-    font-size: 15pt;
+    font-size: 12pt;
 }
 
 h5 {
@@ -76,7 +76,7 @@ p {
     font-family: var(--font-family-primary);
     font-weight: var(--light);
     /* 18pt Regular */
-    font-size: 9pt;
+    font-size: 8pt;
 }
 
 
@@ -111,7 +111,7 @@ header {
     /* Aligns it to the left */
     right: 0;
     /* Ensures it spans the full width */
-    background-color: var(--blue);
+    background-color: transparent;
     /* Optional: Adds a semi-transparent background */
     z-index: 1000;
     /* Ensures it appears above other content */
@@ -274,6 +274,7 @@ nav {
 
 /* Hero Section */
 .hero {
+    position: relative;
     height: 100vh;
     /* Full screen height */
     display: flex;
@@ -290,9 +291,11 @@ nav {
 .hero-container {
     display: flex;
     width: 100%;
-    max-width: 900px;
+    max-width: 800px;
     /* Limit the max width for aesthetics */
     box-sizing: border-box;
+    margin-left: 80px;
+
 }
 
 .hero-text {
@@ -329,13 +332,17 @@ p {
     margin: 0;
 }
 
+.hero-text p {
+    margin-top: -10px;
+    padding: 0;
+}
 
 
 .hero-text button {
     margin-top: 30px;
     background-color: var(--white);
     color: var(--blue);
-    font-size: 12pt;
+    font-size: 10pt;
     font-family: var(--font-family-primary);
     transition: background-color 0.3s;
     padding: 5px 11px;
@@ -347,10 +354,11 @@ p {
     cursor: pointer;
     /* Change cursor to pointer on hover */
     text-align: center;
-    margin-right: 320px;
+    margin-right: 300px;
     /* Align text to the left */
     display: inline-block;
     /* Allow alignment and size adjustments */
+    margin-top: 10px;
 }
 
 .hero-text button:hover {
@@ -358,20 +366,19 @@ p {
 }
 
 
-
 .hero-assets {
     position: absolute;
-    /* Position them absolutely within the hero */
+    /* Positioning the assets absolutely */
     top: 0;
-    /* Adjust as needed */
+    /* Adjust based on your design */
     left: 0;
     /* Align to the left */
     width: 100%;
     /* Full width */
     height: auto;
-    /* Adjust height as needed */
-    z-index: -1;
-    /* Ensure they stay behind the text */
+    /* Adjust as needed */
+    z-index: 1;
+    /* Keep it behind other content */
 }
 
 .hero-assets img {
@@ -382,32 +389,24 @@ p {
 
 }
 
-/* Positioning each asset specifically */
 .clouds {
-    top: 10%;
-    /* Adjust vertical position */
-    left: 10%;
-    /* Adjust horizontal position */
-    width: 20%;
-    /* Adjust size */
+    scale: 105%;
+    margin-top: 80px;
+    margin-left: 30px;
 }
 
 .dotted-lines {
-    top: 20%;
-    /* Adjust as needed */
-    left: 30%;
-    /* Adjust as needed */
-    width: 25%;
-    /* Adjust size */
+
+    margin-top: 100px;
+
+    margin-left: -50px;
 }
 
 .dotted-ropes {
-    top: 40%;
-    /* Adjust as needed */
-    left: 50%;
-    /* Adjust as needed */
-    width: 15%;
-    /* Adjust size */
+    scale: 110%;
+    margin-top: -50px;
+    margin-left: 150px;
+
 }
 
 .flying-balloons {
